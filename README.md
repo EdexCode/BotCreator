@@ -6,9 +6,8 @@ Easy chatbot development with Python. Create your own chatbots with just a few l
 ```python
 import botcreator as bc
 
-bc.filename = 'TXT_FILE_PATH'
 prompt = input("Prompt: ")
-print(bc.botresponse(prompt.lower()))
+print(bc.botresponse(prompt.lower(), 'TXT_FILE_PATH_HERE))
 ```
 #### TXT File
 ```
@@ -53,9 +52,8 @@ are&you&a&bot#your&a&chatbot/Yes
 ```python
 import botcreator as bc
 
-bc.filename = 'words.txt'
 prompt = input("Prompt: ")
-print(bc.botresponse(prompt.lower()))
+print(bc.botresponse(prompt.lower(), 'words.txt'))
 ```
 ### Outputs:
 #### my&name&is/Nice to meet you!
