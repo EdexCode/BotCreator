@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.1'
+VERSION = '0.0.4-alpha'
 DESCRIPTION = 'Easy chatbot development with Python. Create your own chatbots with just a few lines of code.'
 # Setting up
 setup(
