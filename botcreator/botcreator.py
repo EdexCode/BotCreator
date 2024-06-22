@@ -1,8 +1,6 @@
 import random
 
-filename = None
-
-def botresponse(prompt):
+def botresponse(prompt, filename):
     exact_matches = []
     condition_matches = []
 
