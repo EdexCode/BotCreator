@@ -7,7 +7,7 @@ Easy chatbot development with Python. Create your own chatbots with just a few l
 import botcreator as bc
 
 prompt = input("Prompt: ")
-print(bc.botresponse(prompt.lower(), 'TXT_FILE_PATH_HERE))
+print(bc.botresponse(prompt.lower(), 'TXT_FILE_PATH_HERE'))
 ```
 #### TXT File
 ```
