@@ -38,7 +38,7 @@ hi#hello#sup/Hi there#How can I help you
 ```
 my&name&is/Nice to meet you!
 ```
-#### Here, The & symbol in my&name&is/Nice to meet you! signifies that the bot expects all three words (my, name, is) to appear together in the user's input. When this condition is met, the bot will respond with Nice to meet you!.
+#### Here, The & symbol in ```my&name&is/Nice to meet you!``` signifies that the bot expects all three words (my, name, is) to appear together in the user's input. When this condition is met, the bot will respond with Nice to meet you!.
 
 ## Example
 #### words.txt
@@ -61,7 +61,7 @@ print(bc.botresponse(prompt.lower(), 'words.txt'))
 Prompt: my name is edex
 Nice to meet you!
 ```
-#### hi/hello/sup/Hi there#How can i help you?
+#### hi#hello#sup/Hi there#How can i help you?
 ```
 Prompt: hi
 Hi there
