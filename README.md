@@ -29,9 +29,9 @@ hi/Hi there!
 ```
 hi#hello#sup/Hi there#How can I help you
 ```
-#### Here, The # symbol in the rule hi#hello#sup/Hi there#How can I help you separates multiple alternative inputs (hi, hello, sup), indicating that the bot should respond to any of these inputs with randomly chosen responses (Hi there or How can I help you).
+#### Here, The # symbol in the rule ```hi#hello#sup/Hi there#How can I help you``` separates multiple alternative inputs (hi, hello, sup), indicating that the bot should respond to any of these inputs with randomly chosen responses (Hi there or How can I help you).
 
-#### 3. # - AND Operator:
+#### 3. & - AND Operator:
 #### Connects multiple conditions within the expected prompt. It indicates that all specified conditions must be present for the rule to trigger a response.
 #### NOTE: Only works in expected prompt (or condition)
 #### Example:
