@@ -3,12 +3,29 @@ Easy chatbot development with Python. Create your own chatbots with just a few l
 ## How To Use?
 ### Syntax
 #### Python
+<details>
+<Summary>New, and improved code (Recommended)</summary>
+
+```python
+import botcreator as bc
+
+bot = bc.Bot(filename='TXT_FILE_PATH_HERE')
+prompt = input("Prompt: ")
+print(bot.getResponse(prompt.lower()))
+```
+</details>
+<details>
+<Summary>Old/Legacy Code (Not Recommended)</summary>
+
 ```python
 import botcreator as bc
 
 prompt = input("Prompt: ")
 print(bc.botresponse(prompt.lower(), 'TXT_FILE_PATH_HERE'))
 ```
+
+</details>
+
 #### TXT File
 ```
 hi#hello/Hi there!
@@ -40,6 +57,15 @@ my&name&is/Nice to meet you!
 ```
 #### Here, The & symbol in ```my&name&is/Nice to meet you!``` signifies that the bot expects all three words (my, name, is) to appear together in the user's input. When this condition is met, the bot will respond with Nice to meet you!.
 
+#### 4. $# - Comment:
+#### Ignored by the library (used to make the data file easier to read or to describe a part of the data).
+#### Example:
+```
+$# Greetings
+Hello/Hi there!
+```
+#### Here, The text after $# in the above example is ignored.
+
 ## Example
 #### words.txt
 ```
@@ -49,12 +75,29 @@ are&you&a&bot#your&a&chatbot/Yes
 &help/How can i help you?
 ```
 #### main.py
+<details>
+<Summary>New, and improved code (Recommended)</summary>
+
+```python
+import botcreator as bc
+
+bot = bc.Bot(filename="words.txt")
+bot.getResponse("Hello")
+prompt = input("Prompt: ")
+print(bc.getResponse(prompt.lower()))
+```
+</details>
+<details>
+<Summary>Old/Legacy Code (Not Recommended)</summary>
+
 ```python
 import botcreator as bc
 
 prompt = input("Prompt: ")
 print(bc.botresponse(prompt.lower(), 'words.txt'))
 ```
+</details>
+
 ### Outputs:
 #### my&name&is/Nice to meet you!
 ```

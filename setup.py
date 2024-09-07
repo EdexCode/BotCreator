@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '0.0.4-alpha'
+VERSION = '0.0.5-alpha'
 DESCRIPTION = 'Easy chatbot development with Python. Create your own chatbots with just a few lines of code.'
 # Setting up
 setup(
@@ -14,7 +14,10 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        "cachetools>=5.3.1",
+        "watchdog>=4.0.1"
+    ],
     keywords=['python', 'bot', 'chatbot', 'botdeveloper', 'predefined'],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",

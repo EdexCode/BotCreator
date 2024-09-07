@@ -1,1 +1,1 @@
-from .botcreator import botresponse
+from .botcreator import botresponse, Bot
